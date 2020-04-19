@@ -1,5 +1,6 @@
 <template>
     <button class="b-button" :class="{[`icon-${iconPosition} `]:true}">
+        <b-icon name="loading" class="loading"></b-icon>
         <b-icon v-if="icon" :name="icon" class="icon"></b-icon>
         <div class="content">
             <slot></slot>
@@ -23,6 +24,15 @@
 </script>
 
 <style lang="scss">
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
     .b-button {
         height: var(--button-height);
         padding: 0 1.1em;
@@ -66,6 +76,12 @@
             > .content {
                 order: 1;
             }
+        }
+
+        .loading {
+            order: 1;
+            margin-right: .23em;
+            animation: spin 1.5s infinite linear;
         }
     }
 </style>
