@@ -1,5 +1,7 @@
 <template>
-    <button class="b-button">按钮</button>
+    <button class="b-button">
+        <slot></slot>
+    </button>
 </template>
 <scritp>
     export default { }
