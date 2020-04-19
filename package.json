@@ -1,0 +1,9 @@
+{
+  "name": "bass",
+  "version": "0.0.1",
+  "description": "这是一个 UI 框架",
+  "main": "index.js",
+  "repository": "git@github.com:FuZhouJohn/bass.git",
+  "author": "庄骥南 <a492073467@gmail.com>",
+  "license": "MIT"
+}
