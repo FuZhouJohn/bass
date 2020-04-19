@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:FuZhouJohn/bass.git",
   "author": "庄骥南 <a492073467@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
