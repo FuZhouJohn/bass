@@ -1,8 +1,6 @@
 <template>
     <button class="b-button" :class="{[`icon-${iconPosition} `]:true}">
-        <svg v-if="icon" class="icon" aria-hidden="true">
-            <use :xlink:href="`#i-${icon}`"></use>
-        </svg>
+        <b-icon v-if="icon" :name="icon"></b-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -49,7 +47,7 @@
             outline: none;
         }
 
-        > .icon {
+        > .b-icon {
             order: 1;
             margin-right: .23em;
         }
@@ -59,7 +57,7 @@
         }
 
         &.icon-right {
-            > .icon {
+            > .b-icon {
                 order: 2;
                 margin-right: 0;
                 margin-left: .23em;
