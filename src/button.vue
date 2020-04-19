@@ -2,9 +2,7 @@
     <button class="b-button">按钮</button>
 </template>
 <scritp>
-    export default {
-
-    }
+    export default { }
 </scritp>
 
 <style lang="scss">
