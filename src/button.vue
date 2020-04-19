@@ -1,6 +1,6 @@
 <template>
     <button class="b-button" :class="{[`icon-${iconPosition} `]:true}">
-        <b-icon v-if="icon" :name="icon"></b-icon>
+        <b-icon v-if="icon" :name="icon" class="icon"></b-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -47,7 +47,7 @@
             outline: none;
         }
 
-        > .b-icon {
+        > .icon {
             order: 1;
             margin-right: .23em;
         }
@@ -57,7 +57,7 @@
         }
 
         &.icon-right {
-            > .b-icon {
+            > .icon {
                 order: 2;
                 margin-right: 0;
                 margin-left: .23em;
