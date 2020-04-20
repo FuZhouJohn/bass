@@ -1,7 +1,7 @@
 <template>
-    <button class="b-button" :class="{[`icon-${iconPosition} `]:true}">
-        <b-icon name="loading" class="loading"></b-icon>
-        <b-icon v-if="icon" :name="icon" class="icon"></b-icon>
+    <button class="b-button" :class="{[`icon-${iconPosition} `]:true}" @click="$emit('click')">
+        <b-icon v-if="loading" name="loading" class="loading icon"></b-icon>
+        <b-icon v-if="icon && !loading" :name="icon" class="icon"></b-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -11,6 +11,10 @@
     export default {
         // props: ["icon", "iconPosition"]
         props: {
+            loading: {
+                type: Boolean,
+                default: false
+            },
             icon: {},
             iconPosition: {
                 type: String,
@@ -79,8 +83,8 @@
         }
 
         .loading {
-            order: 1;
-            margin-right: .23em;
+            /*order: 1;*/
+            /*margin-right: .23em;*/
             animation: spin 1.5s infinite linear;
         }
     }
