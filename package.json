@@ -7,7 +7,9 @@
   "author": "庄骥南 <a492073467@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "dev-test": "parcel watch test/* --no-cache & karma start",
+    "test": "parcel build test/* --no-minify && karma start --single-run"
   },
   "dependencies": {
     "vue": "^2.6.11",
@@ -17,7 +19,17 @@
     "@vue/component-compiler-utils": "^3.1.2",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
+    "cssnano": "^4.1.10",
+    "karma": "^5.0.2",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.0",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^7.1.1",
     "sass": "^1.26.3",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0",
     "vue-template-compiler": "^2.6.11"
   },
   "alias": {

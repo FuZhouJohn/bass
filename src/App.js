@@ -33,10 +33,8 @@ const expect = chai.expect;
         }
     })
     vm.$mount()
-
     const useElement = vm.$el.querySelector('use')
     expect(useElement.getAttribute('xlink:href')).to.eq('#i-download')
-
     vm.$el.remove()
     vm.$destroy()
 }
@@ -52,7 +50,6 @@ const expect = chai.expect;
     vm.$mount()
     const useElement = vm.$el.querySelector('use')
     expect(useElement.getAttribute('xlink:href')).to.eq('#i-loading')
-
     vm.$el.remove()
     vm.$destroy()
 }
@@ -70,7 +67,6 @@ const expect = chai.expect;
     const svgElement = vm.$el.querySelector('svg')
     let svgOrder = window.getComputedStyle(svgElement).order
     expect(svgOrder).to.eq('1')
-
     vm.$el.remove()
     vm.$destroy()
 }
@@ -89,11 +85,9 @@ const expect = chai.expect;
     const svgElement = vm.$el.querySelector('svg')
     let svgOrder = window.getComputedStyle(svgElement).order
     expect(svgOrder).to.eq('2')
-
     vm.$el.remove()
     vm.$destroy()
 }
-
 {
     // 监听 click
     const Constructor = Vue.extend(Button)
@@ -104,16 +98,12 @@ const expect = chai.expect;
         }
     })
     vm.$mount()
-
     const spy = chai.spy(function () {
     })
     vm.$on('click', spy)
-
     const button = vm.$el
     button.click()
-
     expect(spy).to.have.been.called()
-
     vm.$el.remove()
     vm.$destroy()
 }
