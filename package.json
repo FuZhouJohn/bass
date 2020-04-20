@@ -27,6 +27,7 @@
     "karma-mocha": "^2.0.0",
     "karma-sinon-chai": "^2.0.2",
     "mocha": "^7.1.1",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.3",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
