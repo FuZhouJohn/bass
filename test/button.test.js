@@ -1,11 +1,13 @@
 const expect = chai.expect;
 import Vue from 'vue'
 import Button from '../src/button'
-import Icon from '../src/icon'
+
 Vue.config.productionTip = false
 Vue.config.devtools = false
 
 describe('Button', () => {
+    // BDD 行为驱动测试通过 Mocha 引入
+
     it('存在.', () => {
         expect(Button).to.be.ok
     })
