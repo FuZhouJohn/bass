@@ -1,6 +1,6 @@
 {
   "name": "bass-ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "这是一个 UI 框架",
   "main": "dist/index",
   "repository": "git@github.com:FuZhouJohn/bass.git",
