@@ -8,11 +8,11 @@
 
 1. 安装
 
-开启 border-box
+    开启 border-box
 
-```css
-* {box-sizing: border-box}
-```
+    ```css
+    * {box-sizing: border-box}
+    ```
 
 ## 文档
 
