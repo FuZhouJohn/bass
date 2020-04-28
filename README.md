@@ -1,6 +1,6 @@
 # Bass - Vue UI 组件库
 
-![](https://github.com/FuZhouJohn/bass/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/FuZhouJohn/bass/workflows/Node.js%20CI/badge.svg)
 
 ## 介绍
 
